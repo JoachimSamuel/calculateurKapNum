@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculateur Devis Kap Numérique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table id="infos-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Information</th>
+          <th>Prix</th>
+          <th>Aide</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              id="simple"
+              name="simple"
+              data-cell-name="simple-price"
+            />
+          </td>
+          <td>Site Web Vitrine</td>
+          <td>
+            <input
+              type="number"
+              id="prix-simple"
+              name="prix-simple"
+              data-cell-name="webdesign-simple-price"
+              data-max-aide="site-web-vitrine"
+              data-eligible="true"
+              inputmode="numeric"
+            />
+            €
+          </td>
+          <td>Création ou refonte d’un site Internet vitrine</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              id="webdesign-simple"
+              name="webdesign-simple"
+            />
+          </td>
+          <td>Webdesign</td>
+          <td>
+            <input
+              type="number"
+              id="webdesign-simple"
+              name="webdesign-simple"
+              data-cell-name="webdesign-simple-price"
+              data-aide="cre-graphique-aide"
+              data-max-aide="creations-graphiques"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td>Accompagnement à la digitalisation de contenus</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="medium" name="medium" /></td>
+          <td>Site Web E-commerce</td>
+          <td>
+            <input
+              type="number"
+              id="medium"
+              name="medium"
+              data-cell-name="medium-price"
+              data-aide="Création_ou_refonte_dun_site_Internet_vitrine"
+              data-max-aide="site-web-e-commerce"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td>Création d’un site marchand</td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align: center">Modules Supplémentaire</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="reservations" name="reservations" />
+          </td>
+          <td>Réservations</td>
+          <td>
+            <input
+              type="number"
+              id="reservations"
+              name="reservations"
+              data-cell-name="reservations-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="paiement" name="paiement" /></td>
+          <td>Module de Paiement</td>
+          <td>
+            <input
+              type="number"
+              id="paiement"
+              name="paiement"
+              data-cell-name="paiement-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="newsletter" name="newsletter" /></td>
+          <td>Newsletter</td>
+          <td>
+            <input
+              type="number"
+              id="newsletter"
+              name="newsletter"
+              data-cell-name="newsletter-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="flux-instagram" name="flux-instagram" />
+          </td>
+          <td>Flux Instagram</td>
+          <td>
+            <input
+              type="number"
+              id="flux-instagram"
+              name="flux-instagram"
+              data-cell-name="flux-instagram-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              id="creations-graphiques"
+              name="creations-graphiques"
+            />
+          </td>
+          <td>Créations Graphiques</td>
+          <td>
+            <input
+              type="number"
+              id="creations-graphiques"
+              name="creations-graphiques"
+              data-cell-name="creations-graphiques-price"
+              data-max-aide="creations-graphiques"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td>Accompagnement à la digitalisation de contenus</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="carnet-accueil" name="carnet-accueil" />
+          </td>
+          <td>Carnet accueil (8 pages à définir)</td>
+          <td>
+            <input
+              type="number"
+              id="carnet-accueil"
+              name="carnet-accueil"
+              data-cell-name="carnet-accueil-price"
+              data-max-aide="creations-graphiques"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td>Accompagnement à la digitalisation de contenus</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="photos" name="photos" /></td>
+          <td>Photos</td>
+          <td>
+            <input
+              type="number"
+              id="photos"
+              name="photos"
+              data-cell-name="photos-price"
+              data-max-aide="creations-graphiques"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td>Accompagnement à la digitalisation de contenus</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="videos-drone" name="videos-drone" />
+          </td>
+          <td>Vidéos drône</td>
+          <td>
+            <input
+              type="number"
+              id="videos-drone"
+              name="videos-drone"
+              data-cell-name="videos-drone-price"
+              data-max-aide="creations-graphiques"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td>Accompagnement à la digitalisation de contenus</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="maps" name="maps" /></td>
+          <td>Maps (Carte)</td>
+          <td>
+            <input
+              type="number"
+              id="maps"
+              name="maps"
+              data-cell-name="maps-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              id="redaction-contenus"
+              name="redaction-contenus"
+            />
+          </td>
+          <td>Rédaction des contenus (A propos, descriptions espaces...)</td>
+          <td>
+            <input
+              type="number"
+              id="redaction-contenus"
+              name="redaction-contenus"
+              data-cell-name="redaction-contenus-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              id="redaction-article"
+              name="redaction-article"
+            />
+          </td>
+          <td>Rédaction article de blog, mise en page par article</td>
+          <td>
+            <input
+              type="number"
+              id="redaction-article"
+              name="redaction-article"
+              data-cell-name="redaction-article-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="maintenance" name="maintenance" />
+          </td>
+          <td>Maintenance pour problèmes techniques</td>
+          <td>
+            <input
+              type="number"
+              id="maintenance"
+              name="maintenance"
+              sdata-cell-name="maintenance-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              id="google_my_business"
+              name="google_my_business"
+            />
+          </td>
+          <td>Fiche Google My Business (Présence Google Maps)</td>
+          <td>
+            <input
+              type="number"
+              id="google_my_business"
+              name="google_my_business"
+              data-cell-name="google_my_business-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="linktree" name="linktree" />
+          </td>
+          <td>Linktree</td>
+          <td>
+            <input
+              type="number"
+              id="linktree"
+              name="linktree"
+              data-cell-name="linktree-price"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="chatbot" name="chatbot" />
+          </td>
+          <td>ChatBot</td>
+          <td>
+            <input
+              type="number"
+              id="chatbot"
+              name="chatbot"
+              data-cell-name="chatbot-price"
+              data-max-aide="chatbot"
+              data-eligible="true"
+            />
+            €
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">Prix Total :</td>
+          <td>
+            <input type="number" id="total" name="total" value="0" readonly />
+            €
+          </td>
+        </tr>
+        <!-- Ajouter un champ pour afficher le montant remboursé -->
+        <tr>
+          <td colspan="2">Montant remboursé :</td>
+          <td>
+            <input
+              type="number"
+              id="remboursement"
+              name="remboursement"
+              value="0"
+              readonly
+            />
+            €
+          </td>
+        </tr>
+
+        <!-- Ajouter un champ pour afficher le prix restant à payer -->
+        <tr>
+          <td colspan="2">Prix restant à payer :</td>
+          <td>
+            <input
+              type="number"
+              id="prix-restant"
+              name="prix-restant"
+              value="0"
+              readonly
+            />
+            €
+          </td>
+        </tr>
+        <!-- Ajouter un élément pour afficher les montants restants des aides -->
+        <tr>
+          <td colspan="2">Montants restants des aides :</td>
+          <td id="montants-restants-aides"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="/script.js"></script>
+  </body>
+</html>

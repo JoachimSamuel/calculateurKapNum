@@ -1,0 +1,23 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 30px;
+  background-color: white;
+}
+th,
+td {
+  border: 1px solid rgba(14, 46, 62, 1);
+  padding: 6px;
+  text-align: left;
+}
+th {
+  background-color: rgba(240, 253, 255, 1);
+}
+p {
+  color: rgba(14, 46, 62, 1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
